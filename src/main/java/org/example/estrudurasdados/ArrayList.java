@@ -2,19 +2,19 @@ package org.example.estrudurasdados;
 
 import java.lang.reflect.Array;
 
-public class Lista<T> {
+public class ArrayList<T> {
 
     // Nesta classe pode se manipular todos os tipos de dados pq usamos Object
     private T[] elementos;
     private Integer tamanho;
 
     // Este construtor já identifica o tamanho do Array quando for instanciado respectivamente
-    public Lista( Integer capacidade ) {
+    public ArrayList( Integer capacidade ) {
         this.elementos = (T[]) new Object[capacidade];
         this.tamanho = 0;
     }
 
-    public Lista( Integer capacidade, Class<T> tipoClasse ) {
+    public ArrayList( Integer capacidade, Class<T> tipoClasse ) {
         this.elementos = (T[]) Array.newInstance(tipoClasse, capacidade);
         this.tamanho = 0;
     }

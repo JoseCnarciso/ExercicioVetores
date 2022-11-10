@@ -2,7 +2,7 @@ package org.example.teste;
 
 import org.example.estrudurasdados.Vetor;
 
-public class Alua03 {
+public class Aula01 {
     public static void main( String[] args ) {
 
         Vetor vetor = new Vetor(53);

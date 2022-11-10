@@ -1,2 +1,17 @@
-package org.example.teste;public class Aula05 {
+package org.example.teste;
+
+import org.example.estrudurasdados.Vetor;
+
+public class Aula05 {
+    public static void main( String[] args ) {
+        Vetor vetor = new Vetor(10);
+
+        vetor.addElemento("Elemento 1");
+        vetor.addElemento("Elemento 2");
+        vetor.addElemento("Elemento 3");
+        vetor.addElemento("Elemento 4");
+
+        System.out.println(vetor.busca(0));
+
+    }
 }
